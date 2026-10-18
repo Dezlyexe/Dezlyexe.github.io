@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отзывы — Пекарня «Мастер и Маргарин»</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="container nav">
+    <a href="index.html" class="logo" aria-label="Мастер и Маргарин">
+      <img src="img/logo3.svg" alt="Мастер и Маргарин">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">О пекарне</a></li>
+      <li><a href="catalog.html">Ассортимент</a></li>
+      <li><a href="order.html">Заказать</a></li>
+      <li><a href="reviews.html" class="active">Отзывы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <a href="tel:+79422526711" class="nav-phone">+7 942 252 67 11</a>
+    <button class="burger" id="burger" aria-label="Меню">☰</button>
+  </div>
+</header>
+
+<main>
+  <section id="reviews">
+    <div class="container">
+      <div class="section-title">
+        <h2>Отзывы наших гостей</h2>
+        <div class="divider"></div>
+        <p>Спасибо, что выбираете нас и делитесь впечатлениями. Ваши добрые слова вдохновляют нас печь ещё лучше!</p>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-rating" aria-label="5 из 5">★★★★★</div>
+          <blockquote>«Очень вкусный хлеб на закваске — ароматный, с хрустящей корочкой. Теперь за свежей буханкой только сюда!»</blockquote>
+          <p class="review-author">Анна</p>
+        </article>
+        <article class="review-card">
+          <div class="review-rating" aria-label="5 из 5">★★★★★</div>
+          <blockquote>«Забегаю за кофе и круассаном по дороге на работу. Всегда свежая выпечка и очень уютно.»</blockquote>
+          <p class="review-author">Михаил</p>
+        </article>
+        <article class="review-card">
+          <div class="review-rating" aria-label="5 из 5">★★★★★</div>
+          <blockquote>«Заказывали Медовик на семейный праздник — нежный, в меру сладкий и красиво оформленный. Все были в восторге!»</blockquote>
+          <p class="review-author">Екатерина</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="review-form-section" id="leave-review">
+    <div class="container">
+      <div class="section-title">
+        <h2>Оставить отзыв</h2>
+        <div class="divider"></div>
+        <p>Расскажите, что вам понравилось. Нам будет приятно узнать ваше мнение!</p>
+      </div>
+
+      <div class="form-wrap">
+        <form id="reviewForm">
+          <div class="form-group">
+            <label for="reviewName">Ваше имя <span class="req">*</span></label>
+            <input type="text" id="reviewName" class="form-control" placeholder="Например, Анна" minlength="2" required>
+          </div>
+          <div class="form-group">
+            <label for="reviewRating">Ваша оценка <span class="req">*</span></label>
+            <select id="reviewRating" class="form-control" required>
+              <option value="">— выберите оценку —</option>
+              <option value="5">★★★★★ — Отлично</option>
+              <option value="4">★★★★☆ — Хорошо</option>
+              <option value="3">★★★☆☆ — Нормально</option>
+              <option value="2">★★☆☆☆ — Есть замечания</option>
+              <option value="1">★☆☆☆☆ — Не понравилось</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="reviewText">Ваш отзыв <span class="req">*</span></label>
+            <textarea id="reviewText" class="form-control" placeholder="Поделитесь впечатлениями о нашей пекарне" minlength="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;padding:16px;">Отправить отзыв</button>
+        </form>
+
+        <div class="form-success" id="reviewSuccess" role="status" aria-live="polite">
+          <div class="check">✓</div>
+          <h3>Спасибо за отзыв!</h3>
+          <p>Ваше мнение очень важно для нас.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="img/logowithwhitetxt.svg" alt="Мастер и Маргарин">
+        </div>
+        <p>Пекарня полного цикла. Готовим хлеб, выпечку и кондитерские изделия из натуральных ингредиентов с 2077 года.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="index.html">О пекарне</a></li>
+          <li><a href="catalog.html">Ассортимент</a></li>
+          <li><a href="order.html">Предзаказ</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Мы в соцсетях</h4>
+        <ul>
+          <li><a href="#">VK</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">MAX</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 ООО «Мастер и Маргарин». Все права нарушены. Курсовой проект.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Логотип пекарни «Мастер и Маргарин»">
+  <title>Мастер и Маргарин — пекарня</title>
+
+  <defs>
+    <linearGradient id="breadGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9C173"/>
+      <stop offset="1" stop-color="#B27A2E"/>
+    </linearGradient>
+
+    <!-- Дуги для текста (центр 200,200, радиус 152) -->
+    <path id="arcTop"    d="M 68.4,124  A 152,152 0 0 1 331.6,124"/>
+    <path id="arcBottom" d="M 68.4,276  A 152,152 0 0 0 331.6,276"/>
+  </defs>
+
+  <!-- Основа знака -->
+  <circle cx="200" cy="200" r="196" fill="#2B1A0F"/>
+  <circle cx="200" cy="200" r="188" fill="#F7EBD5"/>
+  <circle cx="200" cy="200" r="184" fill="none" stroke="#C9973F" stroke-width="2"/>
+  <circle cx="200" cy="200" r="122" fill="none" stroke="#C9973F" stroke-width="2"/>
+
+  <!-- Название по верхней дуге -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700"
+        fill="#2B1A0F" letter-spacing="1.5">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">МАСТЕР и МАРГАРИН</textPath>
+  </text>
+
+  <!-- Подпись по нижней дуге -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="14"
+        fill="#7A2E2A" letter-spacing="2">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">ПЕКАРНЯ · РУЧНАЯ ВЫПЕЧКА</textPath>
+  </text>
+
+  <!-- Полумесяц -->
+  <g transform="translate(136,116)">
+    <path d="M 0,-17 A 17,17 0 1 0 0,17 A 14,14 0 1 1 0,-17 Z" fill="#C9973F"/>
+  </g>
+
+  <!-- Звёзды -->
+  <g fill="#C9973F">
+    <path transform="translate(262,120)" d="M 0,-8 L 2.2,-2.2 L 8,0 L 2.2,2.2 L 0,8 L -2.2,2.2 L -8,0 L -2.2,-2.2 Z"/>
+    <path transform="translate(278,158) scale(0.7)" d="M 0,-8 L 2.2,-2.2 L 8,0 L 2.2,2.2 L 0,8 L -2.2,2.2 L -8,0 L -2.2,-2.2 Z"/>
+  </g>
+
+  <!-- Кот (силуэт) -->
+  <g transform="translate(0,6)" fill="#2B1A0F">
+    <path d="
+      M 159,180
+      C 159,168 160,156 161,147
+      L 185,164
+      Q 200,159 215,164
+      L 239,147
+      C 240,156 241,168 241,180
+      C 241,204 224,216 200,216
+      C 176,216 159,204 159,180
+      Z"/>
+    <!-- Глаза -->
+    <ellipse cx="185" cy="186" rx="5" ry="6.5" fill="#F7EBD5"/>
+    <ellipse cx="215" cy="186" rx="5" ry="6.5" fill="#F7EBD5"/>
+    <!-- Нос -->
+    <path d="M 197,196 L 203,196 L 200,200 Z" fill="#F7EBD5"/>
+  </g>
+
+  <!-- Хлеб -->
+  <g>
+    <path d="
+      M 126,240
+      C 126,220 152,212 200,212
+      C 248,212 274,220 274,240
+      C 274,254 248,262 200,262
+      C 152,262 126,254 126,240
+      Z"
+      fill="url(#breadGrad)"/>
+    <!-- Надрезы -->
+    <g stroke="#8B5A1E" stroke-width="2.5" stroke-linecap="round" fill="none">
+      <path d="M 166,236 Q 174,229 182,236"/>
+      <path d="M 191,233 Q 199,226 207,233"/>
+      <path d="M 216,236 Q 224,229 232,236"/>
+    </g>
+  </g>
+</svg>
